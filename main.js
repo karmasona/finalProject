@@ -83,9 +83,7 @@ function operateLogin() {
 
 
 /**preload quote */
-// script.js
 
-// Function to fetch a random quote from the Quotable API
 async function fetchRandomQuote() {
   try {
       const response = await fetch('https://api.quotable.io/random');
@@ -103,13 +101,13 @@ async function fetchRandomQuote() {
   }
 }
 
-// Function to update the loading-text div with a random quote
+
 async function updateQuote() {
   const quoteContainer = document.getElementById('quoteContainer');
   quoteContainer.textContent = await fetchRandomQuote();
 }
 
-// Call the updateQuote function to set the initial quote
+
 updateQuote();
 
 
